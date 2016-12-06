@@ -1,0 +1,240 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>-->
+<!-- 中间温度区域 -->
+<view class="main-box">
+  <view class="temperature">-2℃</view>
+  <view class="quality">
+    <view class="quality-icon shuye"></view>
+    <text>良</text>
+  </view>
+  <view class="quality">
+    <view class="quality-icon shidu"></view>
+    <text>湿度57%</text>
+  </view>
+  <view class="quality">
+    <view class="quality-icon fengli"></view>
+    <text>东南风1级</text>
+  </view>
+</view>
+
+<!-- 近三天的天气 -->
+<view class="lately">
+   <!-- 第一天 -->
+   <view class="today">
+      <text>今天</text>
+      <view class="middle">
+         <view class="tq">
+            <view class="tq-icon"></view>
+         </view>
+         <view class="tq tq-num">
+            <view>5℃ -10℃</view>
+         </view>
+      </view>
+      <text class="">晴</text>
+   </view><!-- 第一天结束 -->
+   <view class="line"></view>
+  <!-- 第一天 -->
+   <view class="today">
+      <text>今天</text>
+      <view class="middle">
+         <view class="tq">
+            <view class="tq-icon"></view>
+         </view>
+         <view class="tq tq-num">
+            <view>5℃ -10℃</view>
+         </view>
+      </view>
+      <text class="">晴</text>
+   </view><!-- 第一天结束 -->
+   <view class="line"></view>
+   <!-- 第一天 -->
+   <view class="today">
+      <text>今天</text>
+      <view class="middle">
+         <view class="tq">
+            <view class="tq-icon"></view>
+         </view>
+         <view class="tq tq-num">
+            <view>5℃ -10℃</view>
+         </view>
+      </view>
+      <text class="">晴</text>
+   </view><!-- 第一天结束 -->
+</view>
+
+<!-- 一周天气情况 -->
+<view class="week-weather">
+  <view class="title">
+    <view class="title-text">多天预报</view>
+    <view class="title-line"></view>
+  </view>
+  <!-- 多天预报 -->
+  <view class="seven">
+    <view class="sunday">
+      <text>昨天</text>
+      <view>12/4</view>
+      <view class="fine"></view>
+      <text>晴</text>  
+    </view>
+    <view class="sunday">
+      <text>今天</text>
+      <view>11/3</view>
+      <view class="fine"></view>
+      <text>多云</text>  
+    </view>
+    <view class="sunday">
+      <text>周二</text>
+      <view>10/4</view>
+      <view class="fine"></view>
+      <text>小雨</text>  
+    </view>
+    <view class="sunday">
+      <text>周三</text>
+      <view>12/4</view>
+      <view class="fine"></view>
+      <text>晴</text>  
+    </view>
+    <view class="sunday">
+      <text>周四</text>
+      <view>12/4</view>
+      <view class="fine"></view>
+      <text>晴</text>  
+    </view>
+    <view class="sunday">
+      <text>周五</text>
+      <view>12/4</view>
+      <view class="fine"></view>
+      <text>晴</text>  
+    </view>
+  </view>
+  <!-- 天气曲线图 -->
+  <view class="curve-box">
+    <view class="curve"></view>
+    <view class="curve"></view>
+  </view>
+
+  <!-- 一周风向信息 -->
+  <view class="seven">
+    <view class="sunday">
+      <text>晴</text>
+      <view class="fine"></view>
+      <view>西北风</view>
+      <text>3~4级</text>  
+    </view>
+    <view class="sunday">
+      <text>晴</text>
+      <view class="fine"></view>
+      <view>西北风</view>
+      <text>3~4级</text>  
+    </view>
+    <view class="sunday">
+      <text>晴</text>
+      <view class="fine"></view>
+      <view>西北风</view>
+      <text>3~4级</text>  
+    </view>
+    <view class="sunday">
+      <text>晴</text>
+      <view class="fine"></view>
+      <view>西北风</view>
+      <text>3~4级</text>  
+    </view>
+    <view class="sunday">
+      <text>晴</text>
+      <view class="fine"></view>
+      <view>西北风</view>
+      <text>3~4级</text>  
+    </view>
+    <view class="sunday">
+      <text>晴</text>
+      <view class="fine"></view>
+      <view>西北风</view>
+      <text>3~4级</text>  
+    </view>
+  </view>
+</view>
+
+<!-- 生活指数 -->
+<view class="left">
+  <view class="title">
+    <view class="title-text">多天预报</view>
+    <view class="title-line"></view>
+  </view>
+
+  <!-- 生活指数 -->
+  <view class="left-box">
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+    <!-- start -->
+    <view class="left-item">
+      <view class="left-icon"></view>
+      <view class="left-right">
+        <view class="lr-top">头条</view>
+        <view class="lr-bottom">头条新闻</view>
+      </view>
+    </view><!-- end -->
+  </view>
+  
+</view>
